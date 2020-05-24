@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Textutils</title>
+    <style>
+    .button {
+  background-color: #a00e00;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+   }
+        .button5 {border-radius: 12px;}
+
+
+    </style>
+</head>
+<body>
+<marquee bgcolor="a00e00" ><h1 style="color:#fff">Welcome to the text analyazer. Enter your text below</h1></marquee> <br> <br>
+<form action='/analyze' method='get'>
+    <textarea placeholder="Enter here..."  name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea> <br>
+    <input type="checkbox" name="removepunc"> remove punctuations <br>
+    <input type="checkbox" name="fullcaps"> Uppercase<br>
+    <input type="checkbox" name="newlineremover"> New Line Remover<br>
+    <input type="checkbox" name="exstraspaceremover"> Exstra Space Remover<br>
+
+    <button class="button button5" type='submit' > Analyze Text</button>
+
+</form>
+</body>
